@@ -28,10 +28,19 @@ class SeasonApiController extends Controller
             ->response()
             ->setStatusCode(Response::HTTP_CREATED);
     }
+    
+    public function indexteams(Season $season)
+    {
+//        abort_if(Gate::denies('season_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        return response()->json(['status'=>200,'data'=>$season->seasonMatches]);
+       // return new SeasonResource($season);
+    }
+
 
     public function show(Season $season)
     {
 //        abort_if(Gate::denies('season_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        $season->load('seasonMatches', 'seasonTeams'); 
 
         return new SeasonResource($season);
     }

@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Match extends Model  {
 
 use SoftDeletes, HasFactory;
-
+public $with = ['matchMatchTeams'];
 public $table = 'matches';
 
 protected $dates = [

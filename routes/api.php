@@ -4,6 +4,7 @@
 Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', 'middleware' => []], function () {
     // Season
     Route::apiResource('seasons', 'SeasonApiController');
+    Route::get('seasons/index-teams/{season}', 'SeasonApiController@indexteams')->name('seasons.indexteams');
 
     // Match
     Route::apiResource('matches', 'MatchApiController');
