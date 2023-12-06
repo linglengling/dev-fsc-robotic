@@ -23,7 +23,7 @@
                             <div class="input-group ">
                                 <input type="number" v-on:input="addScore" v-model="elementscore.e_2"  class="form-control" >
                                 <div class="input-group-append">
-                                  <span class="input-group-text" >10đ/cái</span>
+                                  <span class="input-group-text" >2đ/cái</span>
                                 </div>
                               </div>
                         </div>
@@ -158,7 +158,11 @@
         computed: {
             tongDiem() {
                 let sum = 0;
-                sum = this.elementscore.e_1*10 + this.elementscore.e_2*10 + this.elementscore.e_3*5 - this.elementscore.e_8*10 - this.elementscore.e_9*10;
+                sum = this.elementscore.e_1*10 + this.elementscore.e_2*2 + this.elementscore.e_3*5 - this.elementscore.e_8*10 - this.elementscore.e_9*10;
+                if(this.elementscore.e_3 >=4 ) {
+                    sum = sum+ 10;
+                }
+                sum = sum + this.elementscore.e_4*10 + this.elementscore.e_5*10 + this.elementscore.e_6*10 +this.elementscore.e_7*10;
                 if(this.elementscore.alliance == 1) 
                     this.match.red_score = sum;
                 if(this.elementscore.alliance == 2) 

@@ -20,6 +20,7 @@
                                 <div class="row justify-content-md-center">
                                     <div class="col-6"> <cal-score :send-score-url="'{{route('admin.matches.sendScore')}}'" :match="{{json_encode( $match)}}" :score-detail="{{ json_encode( $scoreDetail_red ) }}" :match-match-teams1="{{ json_encode($matchMatchTeams_red_1) }}"  :match-match-teams2="{{ json_encode($matchMatchTeams_red_2) }}"  ></cal-score> </div> 
                                     <div class="col-6"> <cal-score :send-score-url="'{{route('admin.matches.sendScore')}}'" :match="{{json_encode( $match)}}" :score-detail="{{ json_encode( $scoreDetail_blue )}}" :match-match-teams1="{{ json_encode($matchMatchTeams_blue_1) }}"  :match-match-teams2="{{ json_encode($matchMatchTeams_blue_2) }}"  ></cal-score> </div>
+                                
                                 </div>
                              
                         </div>

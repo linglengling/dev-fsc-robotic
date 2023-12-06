@@ -37,6 +37,9 @@
                                         {{ trans('cruds.team.fields.score') }}
                                     </th>
                                     <th>
+                                        STT
+                                    </th>
+                                    <th>
                                         &nbsp;
                                     </th>
                                 </tr>
@@ -54,10 +57,13 @@
                                             {{ $team->season->name ?? '' }}
                                         </td>
                                         <td>
-                                            {{ $team->name ?? '' }}
+                                            {{ $team->name ?? '' }}  ||{{ $team->score2 ?? '' }} ||
                                         </td>
                                         <td>
                                             {{ $team->score ?? '' }}
+                                        </td>
+                                        <td>
+                                            {{ $team->n_order ?? '' }}
                                         </td>
                                         <td>
                                             @can('team_show')

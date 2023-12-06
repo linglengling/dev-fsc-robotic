@@ -16,8 +16,9 @@ class MatchTeamApiController extends Controller
     public function index()
     {
     //    abort_if(Gate::denies('match_team_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-
-        return new MatchTeamResource(MatchTeam::with(['match', 'team'])->get());
+        $matchTeams = MatchTeam::with(['match', 'team'])->get();
+        $matchTeams->load("match");
+        return new MatchTeamResource($matchTeams);
     }
 
     public function store(StoreMatchTeamRequest $request)

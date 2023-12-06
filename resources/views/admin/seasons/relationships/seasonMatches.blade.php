@@ -79,7 +79,7 @@
 //                                                        $query->where('isGlobal', 1);
 //                                                    })->get();
                                            foreach ($match->matchMatchTeams()->redteam()->get() as $t) {
-                                               echo $t->team->name ."  -  ";
+                                               echo $t->team->name."(". $t->team->n_order.") "."  -  ";
                                            }
                                            
                                            ?>
@@ -98,7 +98,7 @@
 //                                                        $query->where('isGlobal', 1);
 //                                                    })->get();
                                            foreach ($match->matchMatchTeams()->blueteam()->get() as $t) {
-                                               echo $t->team->name ."  -  ";
+                                               echo $t->team->name ."(". $t->team->n_order.") "."  -  ";
                                            }
                                            
                                            ?>

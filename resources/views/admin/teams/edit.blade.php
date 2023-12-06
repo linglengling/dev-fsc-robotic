@@ -40,6 +40,16 @@
                             @endif
                             <span class="help-block">{{ trans('cruds.team.fields.score_helper') }}</span>
                         </div>
+
+                        <div class="form-group {{ $errors->has('n_order') ? 'has-error' : '' }}">
+                            <label for="n_order">{{ trans('cruds.match.fields.n_order') }}</label>
+                            <input class="form-control" type="number" name="n_order" id="n_order" value="{{ old('n_order', $team->n_order) }}" step="1">
+                            @if($errors->has('n_order'))
+                                <span class="help-block" role="alert">{{ $errors->first('n_order') }}</span>
+                            @endif
+                            <span class="help-block">{{ trans('cruds.match.fields.n_order_helper') }}</span>
+                        </div>
+                        
                         <div class="form-group">
                             <button class="btn btn-danger" type="submit">
                                 {{ trans('global.save') }}

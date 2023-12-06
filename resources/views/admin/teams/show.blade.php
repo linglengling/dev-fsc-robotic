@@ -49,6 +49,14 @@
                                         {{ $team->score }}
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>
+                                        STT
+                                    </th>
+                                    <td>
+                                        {{ $team->n_order }}
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                         <div class="form-group">
