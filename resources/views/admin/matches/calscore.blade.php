@@ -14,6 +14,7 @@
                             <a class="btn btn-default" href="{{ route('admin.matches.index') }}">
                                 {{ trans('global.back_to_list') }}
                             </a>
+                            <h2>Trận {{$match->n_o}}</h2>
                         </div>
                         
                         <div class="container  cal-score-match" >
