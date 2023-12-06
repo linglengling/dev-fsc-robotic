@@ -121,7 +121,22 @@ function edit(Match $match)
 
 
     $seasons = Season::pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
-    $teams= Team::pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+//     $teams= Team::pluck('name', 'id')->prepend(trans('global.pleaseSelect'), '');
+//     foreach( $teams as $k => $v) {
+//         echo $k;
+//       $t =  Team::where('id', $k)->first();
+//    //   dd($t);
+//       $teams[$k] = $v."( ".$t->n_order." )";
+//     }, 
+
+    $teams_r = Team::where([
+        'season_id' => $match->season->id
+        ])->get();
+        $teams = array();
+    foreach($teams_r as $t) {
+        $teams[$t->id] = $t->name."( ".$t->n_order." )" ;
+       // array_push($teams[$t->id],  );
+    }
 
     $match->load('season');
     $r_team =[];
