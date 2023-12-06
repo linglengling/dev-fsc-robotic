@@ -82,7 +82,7 @@ class Team extends Model
     $score= 0;
      $x =0 ;   
     foreach($score_arr as $key=>$value) {
-        if ($key == 0) //or whatever
+        if ($key == 0 && count($score_arr) !=1 ) //or whatever
              continue;
         $score = $score + $score_arr[$key];
         $x++;
