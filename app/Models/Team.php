@@ -44,6 +44,16 @@ class Team extends Model
         return $this->belongsTo(Season::class, 'season_id');
     }
 
+    // public function getFullTeamNameAttribute() { 
+    //     return $this->name . " ( ".$this->n_order ." ) ";
+    // }
+    // public function getFullNameAttribute() {
+    //     return  $this->name . " ( ".$this->n_order ." ) ";
+    // }
+    // public function getNameAttribute($value) {
+    // //    return $value;
+    //     return $value . " ( ".$this->n_order ." ) ";
+    // }
         /**
      * Set the user's first name.
      *
@@ -59,6 +69,7 @@ class Team extends Model
         // lấy điểm tất cả các trận đấu của đội 
         $score_arr = [];
         foreach($teamMatchTeams as $teamMatchTeam) {
+            if($teamMatchTeam->match->is_finished == 0 ) continue;
             if($teamMatchTeam->alliance == 1 ) {
                 
                 if($teamMatchTeam->is_availaibe == 0 || $teamMatchTeam->is_banned == 1 ) {
