@@ -5241,6 +5241,17 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
       message: "Hello, Vue.js!"
     };
   },
+  watch: {
+    // whenever question changes, this function will run
+    'elementscore.e_3': function elementscoreE_3(newVal, oldVal) {
+      console.log("changes here " + newVal);
+      if (newVal > 4) {
+        newVal = 4;
+        this.elementscore.e_3 = 4;
+        alert("maximum is 4");
+      }
+    }
+  },
   computed: {
     tongDiem: function tongDiem() {
       var sum = 0;

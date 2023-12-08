@@ -155,6 +155,18 @@
                 message: "Hello, Vue.js!"
             };
         },
+        watch: {
+            // whenever question changes, this function will run
+            'elementscore.e_3': function (newVal, oldVal){
+                console.log("changes here " + newVal);
+                    if (newVal > 4) {
+                        newVal = 4;
+                        this.elementscore.e_3 = 4;
+                        alert("maximum is 4");
+                    } 
+
+                },
+        },
         computed: {
             tongDiem() {
                 let sum = 0;
