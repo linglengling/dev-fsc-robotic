@@ -5209,6 +5209,16 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
@@ -5255,7 +5265,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
   computed: {
     tongDiem: function tongDiem() {
       var sum = 0;
-      sum = this.elementscore.e_1 * 10 + this.elementscore.e_2 * 2 + this.elementscore.e_3 * 5 - this.elementscore.e_8 * 10 - this.elementscore.e_9 * 10;
+      sum = this.elementscore.e_1 * 10 + this.elementscore.e_2 * 2 + this.elementscore.e_10 * 2 + this.elementscore.e_3 * 5 - this.elementscore.e_8 * 10 - this.elementscore.e_9 * 10;
       if (this.elementscore.e_3 >= 4) {
         sum = sum + 10;
       }
@@ -28026,6 +28036,41 @@ var render = function () {
           _vm._v(" "),
           _c("div", { staticClass: "form-group" }, [
             _c("label", { attrs: { for: "username" } }, [
+              _vm._v("Bánh chưng hoàn thành nhưng chưa đặt lên nồi:"),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "input-group" }, [
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.elementscore.e_10,
+                    expression: "elementscore.e_10",
+                  },
+                ],
+                staticClass: "form-control",
+                attrs: { type: "number" },
+                domProps: { value: _vm.elementscore.e_10 },
+                on: {
+                  input: [
+                    function ($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.elementscore, "e_10", $event.target.value)
+                    },
+                    _vm.addScore,
+                  ],
+                },
+              }),
+              _vm._v(" "),
+              _vm._m(1),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", { attrs: { for: "username" } }, [
               _vm._v("Một thành phần nếp hoặc nhân đặt lên nồi:"),
             ]),
             _vm._v(" "),
@@ -28055,7 +28100,7 @@ var render = function () {
                 },
               }),
               _vm._v(" "),
-              _vm._m(1),
+              _vm._m(2),
             ]),
           ]),
           _vm._v(" "),
@@ -28090,7 +28135,7 @@ var render = function () {
                 },
               }),
               _vm._v(" "),
-              _vm._m(2),
+              _vm._m(3),
             ]),
           ]),
           _vm._v(" "),
@@ -28355,7 +28400,7 @@ var render = function () {
                 },
               }),
               _vm._v(" "),
-              _vm._m(3),
+              _vm._m(4),
             ]),
           ]),
           _vm._v(" "),
@@ -28392,7 +28437,7 @@ var render = function () {
                 },
               }),
               _vm._v(" "),
-              _vm._m(4),
+              _vm._m(5),
             ]),
           ]),
           _vm._v(" "),
@@ -28715,6 +28760,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "input-group-append" }, [
       _c("span", { staticClass: "input-group-text" }, [_vm._v("10đ/cái")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "input-group-append" }, [
+      _c("span", { staticClass: "input-group-text" }, [_vm._v("2đ/cái")]),
     ])
   },
   function () {
