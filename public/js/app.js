@@ -28156,31 +28156,29 @@ var render = function () {
                     : _vm.elementscore.e_4,
                 },
                 on: {
-                  change: [
-                    function ($event) {
-                      var $$a = _vm.elementscore.e_4,
-                        $$el = $event.target,
-                        $$c = $$el.checked ? true : false
-                      if (Array.isArray($$a)) {
-                        var $$v = "1",
-                          $$i = _vm._i($$a, $$v)
-                        if ($$el.checked) {
-                          $$i < 0 &&
-                            _vm.$set(_vm.elementscore, "e_4", $$a.concat([$$v]))
-                        } else {
-                          $$i > -1 &&
-                            _vm.$set(
-                              _vm.elementscore,
-                              "e_4",
-                              $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                            )
-                        }
+                  input: _vm.addScore,
+                  change: function ($event) {
+                    var $$a = _vm.elementscore.e_4,
+                      $$el = $event.target,
+                      $$c = $$el.checked ? true : false
+                    if (Array.isArray($$a)) {
+                      var $$v = "1",
+                        $$i = _vm._i($$a, $$v)
+                      if ($$el.checked) {
+                        $$i < 0 &&
+                          _vm.$set(_vm.elementscore, "e_4", $$a.concat([$$v]))
                       } else {
-                        _vm.$set(_vm.elementscore, "e_4", $$c)
+                        $$i > -1 &&
+                          _vm.$set(
+                            _vm.elementscore,
+                            "e_4",
+                            $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                          )
                       }
-                    },
-                    _vm.addScore,
-                  ],
+                    } else {
+                      _vm.$set(_vm.elementscore, "e_4", $$c)
+                    }
+                  },
                 },
               }),
               _vm._v(" "),
@@ -28212,31 +28210,29 @@ var render = function () {
                     : _vm.elementscore.e_5,
                 },
                 on: {
-                  change: [
-                    function ($event) {
-                      var $$a = _vm.elementscore.e_5,
-                        $$el = $event.target,
-                        $$c = $$el.checked ? true : false
-                      if (Array.isArray($$a)) {
-                        var $$v = "1",
-                          $$i = _vm._i($$a, $$v)
-                        if ($$el.checked) {
-                          $$i < 0 &&
-                            _vm.$set(_vm.elementscore, "e_5", $$a.concat([$$v]))
-                        } else {
-                          $$i > -1 &&
-                            _vm.$set(
-                              _vm.elementscore,
-                              "e_5",
-                              $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                            )
-                        }
+                  input: _vm.addScore,
+                  change: function ($event) {
+                    var $$a = _vm.elementscore.e_5,
+                      $$el = $event.target,
+                      $$c = $$el.checked ? true : false
+                    if (Array.isArray($$a)) {
+                      var $$v = "1",
+                        $$i = _vm._i($$a, $$v)
+                      if ($$el.checked) {
+                        $$i < 0 &&
+                          _vm.$set(_vm.elementscore, "e_5", $$a.concat([$$v]))
                       } else {
-                        _vm.$set(_vm.elementscore, "e_5", $$c)
+                        $$i > -1 &&
+                          _vm.$set(
+                            _vm.elementscore,
+                            "e_5",
+                            $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                          )
                       }
-                    },
-                    _vm.addScore,
-                  ],
+                    } else {
+                      _vm.$set(_vm.elementscore, "e_5", $$c)
+                    }
+                  },
                 },
               }),
               _vm._v(" "),
@@ -28274,31 +28270,29 @@ var render = function () {
                     : _vm.elementscore.e_6,
                 },
                 on: {
-                  change: [
-                    function ($event) {
-                      var $$a = _vm.elementscore.e_6,
-                        $$el = $event.target,
-                        $$c = $$el.checked ? true : false
-                      if (Array.isArray($$a)) {
-                        var $$v = "1",
-                          $$i = _vm._i($$a, $$v)
-                        if ($$el.checked) {
-                          $$i < 0 &&
-                            _vm.$set(_vm.elementscore, "e_6", $$a.concat([$$v]))
-                        } else {
-                          $$i > -1 &&
-                            _vm.$set(
-                              _vm.elementscore,
-                              "e_6",
-                              $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                            )
-                        }
+                  input: _vm.addScore,
+                  change: function ($event) {
+                    var $$a = _vm.elementscore.e_6,
+                      $$el = $event.target,
+                      $$c = $$el.checked ? true : false
+                    if (Array.isArray($$a)) {
+                      var $$v = "1",
+                        $$i = _vm._i($$a, $$v)
+                      if ($$el.checked) {
+                        $$i < 0 &&
+                          _vm.$set(_vm.elementscore, "e_6", $$a.concat([$$v]))
                       } else {
-                        _vm.$set(_vm.elementscore, "e_6", $$c)
+                        $$i > -1 &&
+                          _vm.$set(
+                            _vm.elementscore,
+                            "e_6",
+                            $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                          )
                       }
-                    },
-                    _vm.addScore,
-                  ],
+                    } else {
+                      _vm.$set(_vm.elementscore, "e_6", $$c)
+                    }
+                  },
                 },
               }),
               _vm._v(" "),
@@ -28330,31 +28324,29 @@ var render = function () {
                     : _vm.elementscore.e_7,
                 },
                 on: {
-                  change: [
-                    function ($event) {
-                      var $$a = _vm.elementscore.e_7,
-                        $$el = $event.target,
-                        $$c = $$el.checked ? true : false
-                      if (Array.isArray($$a)) {
-                        var $$v = "1",
-                          $$i = _vm._i($$a, $$v)
-                        if ($$el.checked) {
-                          $$i < 0 &&
-                            _vm.$set(_vm.elementscore, "e_7", $$a.concat([$$v]))
-                        } else {
-                          $$i > -1 &&
-                            _vm.$set(
-                              _vm.elementscore,
-                              "e_7",
-                              $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                            )
-                        }
+                  input: _vm.addScore,
+                  change: function ($event) {
+                    var $$a = _vm.elementscore.e_7,
+                      $$el = $event.target,
+                      $$c = $$el.checked ? true : false
+                    if (Array.isArray($$a)) {
+                      var $$v = "1",
+                        $$i = _vm._i($$a, $$v)
+                      if ($$el.checked) {
+                        $$i < 0 &&
+                          _vm.$set(_vm.elementscore, "e_7", $$a.concat([$$v]))
                       } else {
-                        _vm.$set(_vm.elementscore, "e_7", $$c)
+                        $$i > -1 &&
+                          _vm.$set(
+                            _vm.elementscore,
+                            "e_7",
+                            $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                          )
                       }
-                    },
-                    _vm.addScore,
-                  ],
+                    } else {
+                      _vm.$set(_vm.elementscore, "e_7", $$c)
+                    }
+                  },
                 },
               }),
               _vm._v(" "),

@@ -49,22 +49,22 @@
                         <div class="form-group ">
                             <label for="username">Robot vào khu vực xem pháo hoa:</label>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" v-on:change="addScore" type="checkbox" v-model="elementscore.e_4"  id="inlineCheckbox1" value="1">
+                                <input class="form-check-input" v-on:input="addScore" type="checkbox" v-model="elementscore.e_4"  id="inlineCheckbox1" value="1">
                                 <label class="form-check-label" for="inlineCheckbox1">Robot 1</label>
                               </div>
                               <div class="form-check form-check-inline">
-                                <input class="form-check-input" v-on:change="addScore" type="checkbox" v-model="elementscore.e_5"  id="inlineCheckbox2" value="1">
+                                <input class="form-check-input" v-on:input="addScore" type="checkbox" v-model="elementscore.e_5"  id="inlineCheckbox2" value="1">
                                 <label class="form-check-label" for="inlineCheckbox2">Robot 2</label>
                               </div>
                         </div>
                         <div class="form-group ">
                             <label for="username">Robot bấm nút bắn pháo hoa:</label>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" v-on:change="addScore" type="checkbox" id="inlineCheckbox1" v-model="elementscore.e_6"   value="1">
+                                <input class="form-check-input" v-on:input="addScore" type="checkbox" id="inlineCheckbox1" v-model="elementscore.e_6"   value="1">
                                 <label class="form-check-label" for="inlineCheckbox1">Robot 1</label>
                               </div>
                               <div class="form-check form-check-inline">
-                                <input class="form-check-input" v-on:change="addScore" type="checkbox" id="inlineCheckbox2" v-model="elementscore.e_7"  value="1">
+                                <input class="form-check-input" v-on:input="addScore" type="checkbox" id="inlineCheckbox2" v-model="elementscore.e_7"  value="1">
                                 <label class="form-check-label" for="inlineCheckbox2">Robot 2</label>
                               </div>
                         </div>
