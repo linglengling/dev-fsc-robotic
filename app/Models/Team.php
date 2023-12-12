@@ -69,7 +69,7 @@ class Team extends Model
         // lấy điểm tất cả các trận đấu của đội 
         $score_arr = [];
         foreach($teamMatchTeams as $teamMatchTeam) {
-            if($teamMatchTeam->match->is_finished == 0 ) continue;
+            if(isset($teamMatchTeam->match->is_finished) && $teamMatchTeam->match->is_finished == 0 ) continue;
             if($teamMatchTeam->alliance == 1 ) {
                 
                 if($teamMatchTeam->is_availaibe == 0 || $teamMatchTeam->is_banned == 1 ) {
