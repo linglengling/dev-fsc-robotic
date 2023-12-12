@@ -28018,15 +28018,13 @@ var render = function () {
                 attrs: { type: "number" },
                 domProps: { value: _vm.elementscore.e_1 },
                 on: {
-                  input: [
-                    function ($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.elementscore, "e_1", $event.target.value)
-                    },
-                    _vm.addScore,
-                  ],
+                  change: _vm.addScore,
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.elementscore, "e_1", $event.target.value)
+                  },
                 },
               }),
               _vm._v(" "),
@@ -28053,15 +28051,13 @@ var render = function () {
                 attrs: { type: "number" },
                 domProps: { value: _vm.elementscore.e_10 },
                 on: {
-                  input: [
-                    function ($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.elementscore, "e_10", $event.target.value)
-                    },
-                    _vm.addScore,
-                  ],
+                  change: _vm.addScore,
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.elementscore, "e_10", $event.target.value)
+                  },
                 },
               }),
               _vm._v(" "),
@@ -28088,15 +28084,13 @@ var render = function () {
                 attrs: { type: "number" },
                 domProps: { value: _vm.elementscore.e_2 },
                 on: {
-                  input: [
-                    function ($event) {
-                      if ($event.target.composing) {
-                        return
-                      }
-                      _vm.$set(_vm.elementscore, "e_2", $event.target.value)
-                    },
-                    _vm.addScore,
-                  ],
+                  change: _vm.addScore,
+                  input: function ($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.elementscore, "e_2", $event.target.value)
+                  },
                 },
               }),
               _vm._v(" "),

@@ -12,7 +12,7 @@
                         <div class="form-group ">
                             <label for="username">Số lượng bánh chưng hoàn chỉnh:</label>
                             <div class="input-group ">
-                                <input type="number" v-on:input="addScore" v-model="elementscore.e_1" class="form-control ddd" >
+                                <input type="number" v-on:change="addScore" v-model="elementscore.e_1" class="form-control ddd" >
                                 <div class="input-group-append">
                                   <span class="input-group-text"  >10đ/cái</span>
                                 </div>
@@ -21,7 +21,7 @@
                         <div class="form-group ">
                             <label for="username">Bánh chưng hoàn thành nhưng chưa đặt lên nồi:</label>
                             <div class="input-group ">
-                                <input type="number" v-on:input="addScore" v-model="elementscore.e_10"  class="form-control" >
+                                <input type="number" v-on:change="addScore" v-model="elementscore.e_10"  class="form-control" >
                                 <div class="input-group-append">
                                   <span class="input-group-text" >2đ/cái</span>
                                 </div>
@@ -30,7 +30,7 @@
                         <div class="form-group ">
                             <label for="username">Một thành phần nếp hoặc nhân đặt lên nồi:</label>
                             <div class="input-group ">
-                                <input type="number" v-on:input="addScore" v-model="elementscore.e_2"  class="form-control" >
+                                <input type="number" v-on:change="addScore" v-model="elementscore.e_2"  class="form-control" >
                                 <div class="input-group-append">
                                   <span class="input-group-text" >2đ/cái</span>
                                 </div>
